@@ -1,31 +1,26 @@
 {
-  description = "A very basic flake";
+  description = "A collection of hyenas flake templates";
 
-  inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
-  };
 
-  outputs = { self, nixpkgs }: {
+  outputs = { self }: {
 
     templates = {
       typescript = {
         path = ./typescript;
         description = "A flake with devenv and typescript enabled";
       };
-    };
-    templates = {
+
       gleam = {
         path = ./gleam;
         description = "A flake with devenv and gleam enabled";
       };
-    };
-    templates = {
+
       gleam-lustre = {
-        path = ./gleam-lustre;
+        path = ./gleam/lustre;
         description = "A flake with devenv and gleam + lustre enabled";
       };
     };
 
-
+    defaultTemplate = self.templates.typescript;
   };
 }
