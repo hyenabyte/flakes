@@ -13,6 +13,18 @@
         description = "A flake with devenv and typescript enabled";
       };
     };
+    templates = {
+      gleam = {
+        path = ./gleam;
+        description = "A flake with devenv and gleam enabled";
+      };
+    };
+    templates = {
+      gleam-lustre = {
+        path = ./gleam-lustre;
+        description = "A flake with devenv and gleam + lustre enabled";
+      };
+    };
 
 
   };
