@@ -1,9 +1,0 @@
-*.beam
-*.ez
-/build
-erl_crash.dump
-
-.devenv
-.direnv
-
-db.sqlite3
