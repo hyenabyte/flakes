@@ -16,7 +16,7 @@
       };
 
       gleam-lustre = {
-        path = ./gleam/lustre;
+        path = ./gleam-lustre;
         description = "A flake with devenv and gleam + lustre enabled";
       };
     };
